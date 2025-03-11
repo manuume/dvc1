@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Create a sample DataFrame with column names
-data = {'Name': ['Alice', 'Bob', 'Charlie'],
+data = {'Name': ['Alice', 'Bob', 'Charlie',],
     'Age': [25, 30, 35],
     'City': ['New York', 'Los Angeles', 'Chicago']
     }
@@ -16,6 +16,9 @@ df.loc[len(df.index)] = new_row_loc
 # # Adding new row to df for V3
 new_row_loc2 = {'Name': 'GF2', 'Age': 30, 'City': 'City2'}
 df.loc[len(df.index)] = new_row_loc2
+
+new_row_loc3 = {'Name': 'natalie', 'Age': 27, 'City': 'australia'}
+df.loc[len(df.index)] = new_row_loc3
 
 # Ensure the "data" directory exists at the root level
 data_dir = 'data'
